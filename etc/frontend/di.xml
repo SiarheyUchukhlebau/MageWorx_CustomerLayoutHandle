@@ -1,0 +1,9 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Plugins -->
+    <type name="Magento\Framework\View\Result\Layout">
+        <plugin name="add_customer_status_handle_to_layout"
+                type="MageWorx\CustomerLayoutHandle\Plugin\AddCustomerStatusHandle"
+                sortOrder="10"
+                disabled="false"/>
+    </type>
+</config>
